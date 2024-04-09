@@ -1,0 +1,43 @@
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0.7em;
+}
+
+.links{
+    margin: 1em 0;
+}
+
+.links p,
+.links a{
+    display: inline;
+    font-size: 1.2em;
+    color: var(--lightColor);
+}
+
+.links a:hover{
+    cursor: pointer;
+    color: var(--secondAccent);
+}
+
+img{
+    box-sizing: border-box;
+    width: 100%;
+    height: inherit;
+    max-width: 100%;
+    object-fit: contain;
+    border: none;
+}
+
+img:hover{
+    border:none;
+}
+
+.centered-p{
+    margin: auto 0;
+}

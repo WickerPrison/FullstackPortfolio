@@ -128,9 +128,9 @@ img:hover{
 
 .project-title{
     text-align: center;
-    font-size: 1.5em;
     pointer-events: none;
     text-decoration: none;
+    font-size: 1.5em;
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7));
     color: var(--lightColor);
     width: calc(100% - var(--borderSize));
@@ -138,6 +138,19 @@ img:hover{
     position: absolute;
     bottom: calc(var(--borderSize) / 2);
     left: calc(var(--borderSize) / 2);
+}
+
+.project-title h3{
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+}
+
+.project-title p{
+    font-size: 0.6em;
+    margin: 0;
+    color: inherit;
+    margin-bottom: 0.1em;
 }
 
 footer{
