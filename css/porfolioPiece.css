@@ -1,5 +1,6 @@
 h1{
     font-size: 4em;
+    flex-grow: 1;
 }
 
 h2{

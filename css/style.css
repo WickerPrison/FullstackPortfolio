@@ -180,3 +180,10 @@ span a{
 section span{
     flex-basis: 40%;
 }
+
+#resume{
+    width: 80%;
+    box-sizing: border-box;
+    margin: 3em auto;
+    display: block;
+}
