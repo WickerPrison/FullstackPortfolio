@@ -1,13 +1,14 @@
-h1{
+/* h1{
     font-size: 4em;
     flex-grow: 1;
-}
+} */
 
-h2{
+h3{
     font-size: 2em;
     text-align: center;
     font-weight: normal;
     margin-top: 0.7em;
+    color: var(--lightColor);
 }
 
 .links{
@@ -40,5 +41,19 @@ img:hover{
 }
 
 .centered-p{
-    margin: auto 0;
+    margin-top: 0.7em;
+    margin-bottom: auto;
+}
+
+#download-link{
+    text-decoration: none;
+    display: block;
+    color: var(--lightColor);
+    font-size: 2em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#download-link:hover{
+    color: var(--secondAccent);
 }

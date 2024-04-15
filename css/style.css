@@ -61,7 +61,7 @@ section{
     display: flex;
     justify-content: center;
     justify-items: center;
-    margin-top: 1%;
+    margin-top: 1.5em;
 }
 
 section > div,
@@ -183,6 +183,7 @@ section span{
 
 #resume{
     width: 80%;
+    max-width: 50em;
     box-sizing: border-box;
     margin: 3em auto;
     display: block;
