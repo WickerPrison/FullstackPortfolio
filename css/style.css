@@ -158,25 +158,14 @@ footer{
     margin-top: 3%;
 }
 
-#contact > *{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-span{
+#contact a{
     color: var(--secondColor);
-    font-size: 1.3em;
-    text-align: center;
-}
-
-span a{
-    color: var(--secondColor);
-    font-size: 1em;
     text-decoration: none;
-}
-
-section span{
-    flex-basis: 40%;
+    font-size: 1.3em;
+    text-align: right;
+    flex-basis: 20%;
+    margin-top: 1.5em;
+    margin-bottom: auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -211,12 +200,12 @@ section span{
         margin-top: 0;
     }
 
-    .section-title{
-        margin: 0.7em 0 auto 0;
-    }
-
     .spacer{
         margin: 0;
+    }
+
+    .section-title{
+        margin: 0.7em 0 0.5em 0;
     }
 
     h1{
@@ -253,15 +242,10 @@ section span{
         margin: 0 auto;
     }
 
-    span{
-        color: var(--secondColor);
+    #contact a{
+        margin: 0;
         font-size: 1em;
-        display: inline;
-    }
-    
-    span a{
-        color: var(--secondColor);
-        font-size: 1em;
-        text-decoration: none;
+        text-align: center;
+        display: block;
     }
 }
