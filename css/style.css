@@ -168,6 +168,10 @@ footer{
     margin-bottom: auto;
 }
 
+#contact a:hover{
+    color: var(--secondAccent);
+}
+
 @media screen and (max-width: 1000px) {
     :root{
         --smallFontSize: 1.3em;
