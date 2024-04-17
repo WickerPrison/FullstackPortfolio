@@ -4,7 +4,9 @@
     --secondColor: #F3EFF5;
     --secondAccent: #72B01D;
     --lightColor: #F3EFF5;
-    --borderSize: 0.3em;
+    --borderSize: 7px;
+    --smallFontSize: 1.5em;
+    --midFontSize: 2em;
 }
 
 *{
@@ -27,7 +29,7 @@ nav{
 nav a{
     text-decoration: none;
     color: var(--secondColor);
-    font-size: 1.5em;
+    font-size: var(--smallFontSize);
     margin: 0 2%;
 }
 
@@ -62,6 +64,7 @@ section{
     justify-content: center;
     justify-items: center;
     margin-top: 1.5em;
+    box-sizing: border-box;
 }
 
 section > div,
@@ -74,12 +77,13 @@ section > p{
     flex-grow: 0;
     flex-shrink: 0;
     margin: 0.7em 2em auto 0;
+    box-sizing: border-box;
 }
 
 .section-title{
     text-align: center;
     margin: 0.7em 1em auto 0;
-    font-size: 2em;
+    font-size: var(--midFontSize);
     color:var(--secondAccent);
 }
 
@@ -92,15 +96,8 @@ section p{
     flex-basis: 80%;
 }
 
-#first-image img{
-    width: auto;
-    height: auto;
-}
-
 #first-image .project-title{
     font-size: 1.8em;
-    bottom: calc(var(--borderSize) * 0.9);
-    left: calc(var(--borderSize) * 0.55);
 }
 
 img{
@@ -130,14 +127,14 @@ img:hover{
     text-align: center;
     pointer-events: none;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: var(--smallFontSize);
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7));
     color: var(--lightColor);
-    width: calc(100% - var(--borderSize));
     padding-top: 10%;
     position: absolute;
-    bottom: calc(var(--borderSize) / 2);
-    left: calc(var(--borderSize) / 2);
+    width: calc(100% - var(--borderSize) * 2);
+    bottom: var(--borderSize);
+    left: var(--borderSize);
 }
 
 .project-title h3{
@@ -181,10 +178,89 @@ section span{
     flex-basis: 40%;
 }
 
-#resume{
-    width: 80%;
-    max-width: 50em;
-    box-sizing: border-box;
-    margin: 3em auto;
-    display: block;
+@media screen and (max-width: 1000px) {
+    :root{
+        --smallFontSize: 1.3em;
+        --midFontSize: 1.7em;
+        --borderSize: 5px;
+    }
+
+    body{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav{
+        justify-content: space-evenly;
+    }
+
+    .line{
+        margin-bottom: 0.5em;
+    }
+
+    section{
+        display: block;
+        width: 90%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+    section p{
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .section-title{
+        margin: 0.7em 0 auto 0;
+    }
+
+    .spacer{
+        margin: 0;
+    }
+
+    h1{
+        font-size: 3.5em;
+        text-align: center;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1.9em;
+        text-align: center;
+    }
+    
+    #first-image img{
+        min-height: 13em;
+        object-fit: contain;
+        background-color: #C0C5C1;
+    }
+    
+    #first-image .project-title{
+        font-size: var(--smallFontSize);
+        bottom: calc(var(--borderSize) * 1.8);
+    }
+    
+    .project-title{
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+        width: calc(100% - var(--borderSize) * 2);
+        bottom: calc(var(--borderSize) *2);
+        left: var(--borderSize);
+    }
+
+    .project-caption{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    span{
+        color: var(--secondColor);
+        font-size: 1em;
+        display: inline;
+    }
+    
+    span a{
+        color: var(--secondColor);
+        font-size: 1em;
+        text-decoration: none;
+    }
 }

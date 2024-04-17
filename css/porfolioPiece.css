@@ -4,7 +4,7 @@
 } */
 
 h3{
-    font-size: 2em;
+    font-size: var(--midFontSize);
     text-align: center;
     font-weight: normal;
     margin-top: 0.7em;
@@ -41,8 +41,16 @@ img:hover{
 }
 
 .centered-p{
-    margin-top: 0.7em;
+    margin-top: 1.5em;
     margin-bottom: auto;
+}
+
+#resume{
+    width: 80%;
+    max-width: 50em;
+    box-sizing: border-box;
+    margin: 3em auto;
+    display: block;
 }
 
 #download-link{
@@ -56,4 +64,36 @@ img:hover{
 
 #download-link:hover{
     color: var(--secondAccent);
+}
+
+@media screen and (max-width: 1000px) {
+    #download-link{
+        font-size: 1.5em;
+        margin: 0.5em auto;
+    }
+
+    #resume{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .links{
+        word-wrap: break-word;
+        margin-top: 0;
+    }
+    
+    .links p,
+    .links a{
+        font-size: 0.95em;
+    }
+    
+    .centered-p{
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    h3{
+        margin-top: 0.7em;
+        margin-bottom: 0.4em;
+    }
 }
