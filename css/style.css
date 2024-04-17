@@ -166,6 +166,7 @@ footer{
 span{
     color: var(--secondColor);
     font-size: 1.3em;
+    text-align: center;
 }
 
 span a{
@@ -228,7 +229,7 @@ section span{
         font-size: 1.9em;
         text-align: center;
     }
-    
+
     #first-image img{
         min-height: 13em;
         object-fit: contain;
