@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcaneAudit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/porfolioPiece.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./index.html#contact">Contact</a>
+            <a href="./resume.html">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="name">
+            <div class="spacer"></div>
+
+            <div>
+                <h1>Jacob Davis</h1>
+                <h2>Arcane Audit</h2>
+            </div>
+
+        </section>
+
+        <div class="line"></div>
+
+        <section>
+            <div class="section-title spacer">Summary</div>
+            <p>I co-founded a small indie video game studio called Broken Beaker. We are currently working on our first game, called Arcane Audit. While this project may not be directly related to web development, this is the project where I learned the majority of my programming knowledge and skills. A project of this scale, with 250+ scripts written over the course of multiple years, has required me to learn good OOP practices and write my code with scalability and performance in mind. </p>
+        </section>
+
+        <section>
+            <div class="section-title spacer">Links</div>
+            <div>
+                <div class="links">
+                    <p>Steam Page: </p>
+                    <a href="https://store.steampowered.com/app/2381770/Arcane_Audit/">https://store.steampowered.com/app/2381770/Arcane_Audit/</a>
+                </div>
+                <div class="links">
+                    <p>GitHub Page: </p>
+                    <a href="https://github.com/WickerPrison/Arcanacide">https://github.com/WickerPrison/Arcanacide</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title spacer">Technologies Used</div>
+            <p class="centered-p">This game was built in the Unity game engine using C# and HLSL.</p>
+        </section>
+
+        <section>
+            <div class="section-title spacer">My Contributions</div>
+            <p>I am the lead developer on this project, working with an artist and a composer. I wrote all of the C# code and the HLSL shaders. I also made all the sound effects myself.</p>
+        </section>
+
+        <section>
+            <div class="section-title spacer">Features</div>
+            <div>
+                <h3>A Full-On Video Game</h3>
+                <p>We made a video game. The game has a story, multiple levels, and takes several hours to complete. Watch the trailer below to see the game in action.</p>
+                <!-- <iframe src="https://www.youtube.com/embed/9xtsstKLrJs?si=h9q9VtKwu5n3BGR-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <h3>Progression Systems</h3>
+                <p>I used C# to code multiple progression systems to allow the player to gain strength and abilities over the course of the game. I programmed a system for gaining and equipping 25+ different “patches” that each give the player abilities. I programmed a complex move set for 4 different weapons.</p>
+                <div class="carousel">
+                    <img src="./Images/ArcaneAudit/LevelUp.gif">
+                    <img src="./Images/ArcaneAudit/PatchesMenu.gif">
+                </div>
+                <h3>Rebindable Controls</h3>
+                <p>The most technically challenging code I wrote for this game was the ability for players to change which buttons do which things. Players can remap any button to any action and this change will be reflected in button prompts throughout the game.</p>
+                <img src="./Images/ArcaneAudit/Rebind.gif">
+                <h3>Enemy AI / Abilities</h3>
+                <p>The game features nearly 20 enemy types and 4 bosses, each with their own AI tree and unique abilities that I programmed in C#. Below are a few examples.</p>
+                <div class="carousel">
+                    <img src="./Images/ArcaneAudit/BossfightGIF.gif">
+                    <img src="./Images/ArcaneAudit/BombsGIF.gif">
+                    <img src="./Images/ArcaneAudit/HalfGolemGif.gif">
+                </div>
+                <h3>Shaders</h3>
+                <p>I also wrote shaders in HLSL to create visual effects for the game. I wrote a shader to swap the colors in assets to match the current scene so we didn’t have to create multiple versions of each asset. I also wrote shaders for effects like making the enemies flash white when they get hit and dissolve after they die or improving the look of the player’s block ability.</p>
+                <div class="carousel">
+                    <img src="./Images/ArcaneAudit/MapShader.gif">
+                    <img src="./Images/ArcaneAudit/NewShieldGif.gif">
+                    <img src="./Images/ArcaneAudit/DissolveShaderGIF.gif">
+                </div>
+            </div>
+            </section>
+    </main>
+
+    <footer></footer>
+    <script src="./js/carousel.js"></script>
+</body>
+</html>

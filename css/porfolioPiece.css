@@ -66,6 +66,38 @@ img:hover{
     color: var(--secondAccent);
 }
 
+iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.carousel{
+    position: relative;
+}
+
+.next-button,
+.previous-button{
+    position: absolute;
+    top: 40%;
+    height: 10%;
+    width: 10%;
+    filter: invert(99%) sepia(1%) saturate(1634%) hue-rotate(204deg) brightness(96%) contrast(101%);
+}
+
+.next-button{
+    right: -7%;
+}
+
+.previous-button{
+    left: -7%;
+}
+
+.next-button:hover,
+.previous-button:hover{
+    cursor: pointer;
+    filter: invert(56%) sepia(90%) saturate(423%) hue-rotate(43deg) brightness(93%) contrast(84%);
+}
+
 @media screen and (max-width: 1000px) {
     #download-link{
         font-size: 1.5em;
