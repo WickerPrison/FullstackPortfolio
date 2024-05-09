@@ -6,6 +6,8 @@ import App from './App.jsx';
 import Home from './pages/home.jsx';
 import Resume from './pages/resume.jsx';
 import AoCaC from './pages/AoCaC.jsx';
+import Chess from './pages/chess.jsx'
+import TicTacToe from './pages/ticTacToe.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path:'/AoCaC',
         element: <AoCaC/>
+      },
+      {
+        path:'/Chess',
+        element:<Chess/>
+      },
+      {
+        path:'/TicTacToe',
+        element:<TicTacToe/>
       }
     ],
   },
