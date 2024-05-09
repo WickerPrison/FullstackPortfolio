@@ -8,6 +8,7 @@ import Resume from './pages/resume.jsx';
 import AoCaC from './pages/AoCaC.jsx';
 import Chess from './pages/chess.jsx'
 import TicTacToe from './pages/ticTacToe.jsx';
+import ArcaneAudit from './pages/arcaneAudit.jsx';
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path:'/TicTacToe',
         element:<TicTacToe/>
+      },
+      {
+        path:'/ArcaneAudit',
+        element:<ArcaneAudit/>
       }
     ],
   },

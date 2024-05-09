@@ -1,12 +1,12 @@
 
 
-export default function Links({liveLink, gitHub}) {
+export default function Links({liveLink, gitHub, liveLinkLabel = "Live Website: "}) {
     return (
         <section>
             <div className="section-title spacer">Links</div>
             <div>
                 <div className="links">
-                    <p>Live Website: </p>
+                    <p>{liveLinkLabel}</p>
                     <a href={liveLink}>{liveLink}</a>
                 </div>
                 <div className="links">

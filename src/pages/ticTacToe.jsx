@@ -7,6 +7,7 @@ import Links from '../components/links';
 const summary = "This website allows users to play tic tac toe against each other in real time using WebSockets. Users can create an account, add friends, and challenge their friends to games or play against random opponents. This website was created by a team of three people.";
 const technologies = "This website was built using Node.js, Express, Sessions, Handlebars, MySQL, Sequelize, and WebSockets via the Express-ws library.";
 const contributions = "I wrote all of the code dealing with WebSockets on the front and back ends and the tic tac toe game itself. I did most of the front end and UI.";
+
 export default function TicTacToe() {
     return (
         <main className="portfolio-piece">
