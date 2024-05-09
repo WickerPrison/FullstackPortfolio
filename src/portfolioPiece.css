@@ -3,7 +3,7 @@
     flex-grow: 1;
 } */
 
-h3{
+.portfolio-piece h3{
     font-size: var(--midFontSize);
     text-align: center;
     font-weight: normal;
@@ -11,23 +11,23 @@ h3{
     color: var(--lightColor);
 }
 
-.links{
+.portfolio-piece .links{
     margin: 1em 0;
 }
 
-.links p,
-.links a{
+.portfolio-piece .links p,
+.portfolio-piece .links a{
     display: inline;
     font-size: 1.2em;
     color: var(--lightColor);
 }
 
-.links a:hover{
+.portfolio-piece .links a:hover{
     cursor: pointer;
     color: var(--secondAccent);
 }
 
-img{
+.portfolio-piece img{
     box-sizing: border-box;
     width: 100%;
     height: inherit;
@@ -36,16 +36,16 @@ img{
     border: none;
 }
 
-img:hover{
+.portfolio-piece img:hover{
     border:none;
 }
 
-.centered-p{
+.portfolio-piece .centered-p{
     margin-top: 1.5em;
     margin-bottom: auto;
 }
 
-#resume{
+.portfolio-piece #resume{
     width: 80%;
     max-width: 50em;
     box-sizing: border-box;
@@ -53,7 +53,7 @@ img:hover{
     display: block;
 }
 
-#download-link{
+.portfolio-piece #download-link{
     text-decoration: none;
     display: block;
     color: var(--lightColor);
@@ -62,21 +62,21 @@ img:hover{
     text-align: center;
 }
 
-#download-link:hover{
+.portfolio-piece #download-link:hover{
     color: var(--secondAccent);
 }
 
-iframe{
+.portfolio-piece iframe{
     width: 100%;
     aspect-ratio: 16 / 9;
 }
 
-.carousel{
+.portfolio-piece .carousel{
     position: relative;
 }
 
-.next-button,
-.previous-button{
+.portfolio-piece .next-button,
+.portfolio-piece .previous-button{
     position: absolute;
     top: 40%;
     height: 10%;
@@ -84,47 +84,47 @@ iframe{
     filter: invert(99%) sepia(1%) saturate(1634%) hue-rotate(204deg) brightness(96%) contrast(101%);
 }
 
-.next-button{
+.portfolio-piece .next-button{
     right: -7%;
 }
 
-.previous-button{
+.portfolio-piece .previous-button{
     left: -7%;
 }
 
-.next-button:hover,
-.previous-button:hover{
+.portfolio-piece .next-button:hover,
+.portfolio-piece .previous-button:hover{
     cursor: pointer;
     filter: invert(56%) sepia(90%) saturate(423%) hue-rotate(43deg) brightness(93%) contrast(84%);
 }
 
 @media screen and (max-width: 1000px) {
-    #download-link{
+    .portfolio-piece #download-link{
         font-size: 1.5em;
         margin: 0.5em auto;
     }
 
-    #resume{
+    .portfolio-piece #resume{
         width: 90%;
         margin: 0 auto;
     }
 
-    .links{
+    .portfolio-piece .links{
         word-wrap: break-word;
         margin-top: 0;
     }
     
-    .links p,
-    .links a{
+    .portfolio-piece .links p,
+    .portfolio-piece .links a{
         font-size: 0.95em;
     }
     
-    .centered-p{
+    .portfolio-piece .centered-p{
         margin-top: 0;
         margin-bottom: 1em;
     }
 
-    h3{
+    .portfolio-piece h3{
         margin-top: 0.7em;
         margin-bottom: 0.4em;
     }

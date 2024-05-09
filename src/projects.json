@@ -2,26 +2,31 @@
     {
         "title":"Age of Conquest and Calamity Website",
         "tech":"JavaScript, HTML, CSS, Google Sheets API, Solo Project",
-        "image":"/Images/AoCaC/AoCaCTitle.png"
+        "image":"/Images/AoCaC/AoCaCTitle.png",
+        "link":"/AoCaC"
     },
     {
         "title":"Chess Against Stockfish",
         "tech":"JavaScript, HTML, CSS, Stockfish API, Team Project",
-        "image":"/Images/Chess/Chess.png"
+        "image":"/Images/Chess/Chess.png",
+        "link":"/Chess"
     },
     {
         "title":"Tic Tac Toe",
         "tech":"Node.js, Web Sockets, Express, Handlebars, CSS, Team Project, MySQL, MVC",
-        "image":"https://imgs.search.brave.com/iINHW8qXD0foIJoJou8LiezKAiAPu_NiR_y_DoDFYhI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTgz/ODIwNTQ5L3Bob3Rv/L3RpYy10YWMtdG9l/LWdhbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTh1UXFV/eU9sUXZvbzRVbmxG/NTBhclRkSDdUOFRV/dmEtWTJkNjlENVNB/UDA9"
+        "image":"https://imgs.search.brave.com/iINHW8qXD0foIJoJou8LiezKAiAPu_NiR_y_DoDFYhI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTgz/ODIwNTQ5L3Bob3Rv/L3RpYy10YWMtdG9l/LWdhbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTh1UXFV/eU9sUXZvbzRVbmxG/NTBhclRkSDdUOFRV/dmEtWTJkNjlENVNB/UDA9",
+        "link":"TicTacToe"
     },
     {
         "title":"Arcane Audit",
         "tech":"C#, OOP, Shaders, Team Project, Large Scale",
-        "image":"/Images/ArcaneAudit/MainCapsule.png"
+        "image":"/Images/ArcaneAudit/MainCapsule.png",
+        "link":"ArcaneAudit"
     },
     {
         "title":"Shaders",
         "tech":"JavaScript, GLSL, PixiJS, OpenGL, WebGL",
-        "image":"/Images/Metaballs.png"
+        "image":"/Images/Metaballs.png",
+        "link":"https://wickerprison.github.io/ShaderPractice/"
     }
 ]

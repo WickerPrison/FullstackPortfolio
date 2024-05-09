@@ -1,11 +1,13 @@
+import { Link, useLocation } from 'react-router-dom';
+
 export default function Header() {
     return (
         <header>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-            <a className="link-button" href="./resume.html">Resume</a>
+            <Link to={{pathname:"/", hash:"#about"}}>About Me</Link>
+            <a href="#work">Portfolio</a>
+            <Link to={{pathname:"/", hash:"#contact"}}>Contact</Link>
+            <Link className="link-button" to="Resume">Resume</Link>
         </nav>
     </header>
     );

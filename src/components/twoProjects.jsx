@@ -3,7 +3,7 @@ export default function TwoProjects({data, firstIndex, secondIndex}) {
         <section>
             <div className="spacer"></div>
 
-            <a className="link-button project-caption" href="./chess.html">
+            <a className="link-button project-caption" href={data[firstIndex].link}>
                 <img src={data[firstIndex].image}/>
                 <div className="project-title">
                     <h3>{data[firstIndex].title}</h3>
@@ -13,7 +13,7 @@ export default function TwoProjects({data, firstIndex, secondIndex}) {
 
             <div></div>
 
-            <a className="link-button project-caption" href="./tictactoe.html">
+            <a className="link-button project-caption" href={data[secondIndex].link}>
                 <img src={data[secondIndex].image}/>
                 <div className="project-title">
                     <h3>{data[secondIndex].title}</h3>

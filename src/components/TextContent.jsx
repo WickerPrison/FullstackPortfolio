@@ -1,5 +1,11 @@
-export default function TextContent({text}) {
+export default function TextContent({text, centered = false}) {
     return (
-        <p>{text}</p>
+        <div>
+            {centered ? (
+                <p className="centered-p">{text}</p>
+            ):(
+                <p>{text}</p>
+            )}
+        </div>
     );
   }
