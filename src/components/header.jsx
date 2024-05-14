@@ -1,14 +1,14 @@
-import { Link, useLocation } from 'react-router-dom';
+import { HashLink as Link} from 'react-router-hash-link';
 
 export default function Header() {
     return (
         <header>
-        <nav>
-            <Link to={{pathname:"/", hash:"#about"}}>About Me</Link>
-            <a href="#work">Portfolio</a>
-            <Link to={{pathname:"/", hash:"#contact"}}>Contact</Link>
-            <Link className="link-button" to="Resume">Resume</Link>
-        </nav>
-    </header>
+            <nav>
+                <Link to={'/#about'}>About Me</Link>
+                <Link to={('/#work')}>Portfolio</Link>
+                <Link to={"/#contact"}>Contact</Link>
+                <Link className="link-button" to="Resume">Resume</Link>
+            </nav>
+        </header>
     );
   }
