@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPatchwork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/porfolioPiece.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="link-button" href="./index.html">Home</a>
+            <a class="link-button" href="./index.html#contact">Contact</a>
+            <a class="link-button" href="./resume.html">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="name">
+            <div class="spacer"></div>
+
+            <div>
+                <h1>Jacob Davis</h1>
+                <h2>Pixel Patchwork</h2>
+            </div>
+
+        </section>
+
+        <div class="line"></div>
+
+        <section>
+            <div class="section-title spacer">Summary</div>
+            <p>This website allows users to place pixels one at a time to collaboratively make pixel art. Users can pay a one time fee to unlock a premium account to access faster pixel placement. It also features a live chat that allows users to coordinate their pixel art efforts. It was made by a group of 4 people.</p>
+        </section>
+
+        <section>
+            <div class="section-title spacer">Links</div>
+            <div>
+                <div class="links">
+                    <p>Live Website: </p>
+                    <a href="https://pixel-patchwork-49e72f834ec3.herokuapp.com/">https://pixel-patchwork-49e72f834ec3.herokuapp.com/</a>
+                </div>
+                <div class="links">
+                    <p>GitHub Page: </p>
+                    <a href="https://github.com/Buk1li/Pixel-Patchwork">https://github.com/Buk1li/Pixel-Patchwork</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-title spacer">Technologies Used</div>
+            <p class="centered-p">Made using React, Material UI, MongoDB, Mongoose, Socket.io, Apollo, GraphQL, and Stripe.</p>
+        </section>
+
+        <section>
+            <div class="section-title spacer">My Contributions</div>
+            <p class="centered-p">I was the team member primarily responsible for the back end. I did the majority of the work involving Apollo and GraphQL on the front and back end. I also contributed heavily to programming the canvas to display the pixels once retrieved from the back end in a way that was performant. I also implemented payment processing and the premium account features. </p>
+        </section>
+
+        <section>
+            <div class="section-title spacer">Features</div>
+            <div>
+                <h3>Collaborative Canvas</h3>
+                <p>Once logged in, users can change the color of any pixel on the canvas. This change is stored using MongoDB along with other information such as the user who made the change and the time the change was made. Other users who view the website can see this information by hovering over the pixel with their mouse.</p>
+                <img src="./Images/PixelPatchwork/Canvas.png"/>
+                <h3>Live Chat</h3>
+                <p>Once logged in users will see a chat window in the bottom left corner of the screen. We implemented this chat feature using web sockets so that users can communicate in real time to coordinate their collaborative pixel art efforts.</p>
+                <img src="./Images/PixelPatchwork/chat.png"/>
+                <h3>Payment Processing</h3>
+                <p>We also implemented payment processing using Stripe to allow users to unlock a premium account. By default, users may only place one pixel every 30 seconds, but by paying a small one-time fee, they can unlock a premium account that allows them to place a pixel every 3 seconds instead.</p>
+        </section>
+
+        <div id="frame"></div>
+    </main>
+
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    <script src="./js/dissolve.js"></script>
+</body>
+</html>
