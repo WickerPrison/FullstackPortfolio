@@ -24,7 +24,7 @@
             <div class="spacer"></div>
             <div>
                 <h1>Jacob Davis</h1>
-                <h2>Age of Conquest and Calamity Website</h2>
+                <h2>Age of Conquest and Calamity</h2>
             </div>
 
         </section>
@@ -33,7 +33,7 @@
 
         <section>
             <div class="section-title spacer">Summary</div>
-            <p>I have been working with a group of friends for the past few years to create a game called Age of Conquest and Calamity. It is our own table top role playing game, similar to Dungeons and Dragons. This website provides players with several resources and a way to quickly and easily access all the information they will need when playing the game.</p>
+            <p>I have been working with a group of friends for the past few years to create a game called Age of Conquest and Calamity. It is our own table top role playing game, similar to Dungeons and Dragons. This website provides players with several resources and a way to quickly and easily access all the information they will need when playing the game and it allows the game designers to quickly and easily add new content using an intuitive UI.</p>
         </section>
 
         <section>
@@ -41,7 +41,7 @@
             <div>
                 <div class="links">
                     <p>Live Website: </p>
-                    <a href="https://conquestandcalamity.netlify.app/">https://conquestandcalamity.netlify.app/</a>
+                    <a href="https://conquestandcalamity.up.railway.app/">https://conquestandcalamity.up.railway.app/</a>
                 </div>
                 <div class="links">
                     <p>GitHub Page: </p>
@@ -52,7 +52,7 @@
 
         <section>
             <div class="section-title spacer">Technologies</div>
-            <p class="centered-p">This website was built with React, JavaScript, CSS, HTML, and the Google Sheets API.</p>
+            <p class="centered-p">This website was built with React, MongoDB, Mongoose, JavaScript, CSS, and HTML.</p>
         </section>
 
         <section>
@@ -65,16 +65,24 @@
             <div>
                 <h3>React</h3>
                 <p>Using React allowed me to reuse components to speed up development and keep my code clean. It also makes any future changes much easier, which is particularly important for this project because the game is still being designed and game design changes could very easily necessitate changes to the website.</p>
+                <h3>Monster Builder</h3>
+                <p>The most challenging page to program was the monster builder. Many Game Masters will want to create their own custom monsters which can be quite complicated, so I created the monster builder page to allow them to easily create and edit monsters using an intuitive UI. These monsters are then saved to the database so they can then be viewed in the monster manual and used in the encounter builder by other users.</p>
+                <div class="carousel">
+                    <video width="100%" controls="controls">
+                        <source src="./Images/MonsterBuilder.mov">
+                    </video>
+                    <img width="100%" height="100%" src="./Images/AoCaC/newMonster.png">
+                    <img src="./Images/AoCaC/newAttack.png">
+                    <img src="./Images/AoCaC/AddAttack.png">
+                </div>
                 <h3>Filters and Sorting</h3>
                 <p>I created a flexible React component that is used on many pages of the website to filter and sort the contents. The component accepts JSON as a prop that contains information about what criteria should be used for filtering and sorting the items on the page. This allows the component to be reused across many pages with different filtering and sorting requirements.</p>
                 <img src="./Images/AoCaC/Filters.png"/>
-                <h3>Google Sheets API</h3>
-                <p>The game designers use Google Sheets when designing new rules and features in the game, so I used the Google Sheets API to pull data directly from a Google Sheets page. This allows the game designers to update or add monsters, weapons, and many other things easily and instantaneously. </p>
                 <h3>Dice Roller</h3>
-                <p>This game has a complex dice system featuring unique dice that are hard to find. This website has a built in dice roller to simplify the user experience.</p>
+                <p>This game has a complex dice system featuring unique dice that are hard to find. This website has a built in dice roller to simplify the user experience. Users that have created an account can save frequently used rolls to the database.</p>
                 <img src="./Images/AoCaC/DiceRoller.png"/>
                 <h3>Encounter Builder</h3>
-                <p>The most complex part of this game is being the Game Master (GM) and controlling many monsters simultaneously that each have abilities and stats that need to be tracked. The Encounter Builder allows a GM to add monsters to an encounter, track the hit points and stamina of each monster, and make rolls for the monster simply by clicking on the name of the skill or weapon the creature is using.</p>
+                <p>The most complex part of this game is being the Game Master (GM) and controlling many monsters simultaneously that each have abilities and stats that need to be tracked. The Encounter Builder allows a GM to add monsters to an encounter, track the hit points and stamina of each monster, and make rolls for the monster simply by clicking on the name of the skill or weapon the creature is using. Users that have created an account can save their current encounter to the database.</p>
                 <img src="./Images/AoCaC/EncounterBuilder.png">
                 <h3>Spell Builder</h3>
                 <p>Players who choose to play as a wizard must build a custom spell each time they use their magical abilities. This system can be complicated for new players. The Spell Builder page walks users through casting a spell, letting them choose whatever options they want. At the end it tells them exactly what dice to roll to cast the spell and can roll the dice for them if they want.</p>
@@ -87,6 +95,7 @@
 
     <footer></footer>
 
+    <script src="./js/carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
     <script src="./js/dissolve.js"></script>
 </body>

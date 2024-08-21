@@ -1,7 +1,7 @@
 const carousels = document.getElementsByClassName("carousel");
 
 const setupCarousel = (carousel) => {
-    const images = carousel.querySelectorAll("img");
+    const images = carousel.querySelectorAll("img, video");
     for(i = 1; i < images.length; i++){
         images[i].style.display = "none";
     }
